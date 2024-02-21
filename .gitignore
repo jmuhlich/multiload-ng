@@ -30,6 +30,7 @@ common/color-scheme-icons.inc
 data/generate-about-data.sh
 description-pak
 doc-pak
+extras/checkinstall/.spec
 extras/pacman/*.PKGBUILD
 indicator/multiload-ng-indicator
 indicator/*.desktop
@@ -51,6 +52,7 @@ systray/*.desktop.in
 xfce4/*.desktop
 xfce4/*.desktop.in
 po/.intltool-merge-cache
+po/.intltool-merge-cache.lock
 po/POTFILES
 po/multiload-ng.pot
 po/LINGUAS
