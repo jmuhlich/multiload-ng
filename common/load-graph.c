@@ -188,14 +188,15 @@ load_graph_draw (LoadGraph *g)
 			cairo_stroke (cr);
 		}
 
-		graph_types[g->id].inline_output(g, g->multiload->extra_data[g->id]);
-		cairo_set_source_rgba (cr, 0, 0, 0, 0.75);
-		cairo_select_font_face (cr, "Sans", CAIRO_FONT_SLANT_NORMAL, CAIRO_FONT_WEIGHT_BOLD);
-		cairo_set_font_size (cr, 20);
-		cairo_move_to (cr, 2, 18);
-		cairo_show_text (cr, g->output_str[0]);
-		cairo_move_to (cr, 2, 38);
-		cairo_show_text (cr, g->output_str[1]);
+                // Disable inline text rendering
+		/* graph_types[g->id].inline_output(g, g->multiload->extra_data[g->id]); */
+		/* cairo_set_source_rgba (cr, 0, 0, 0, 0.75); */
+		/* cairo_select_font_face (cr, "Sans", CAIRO_FONT_SLANT_NORMAL, CAIRO_FONT_WEIGHT_BOLD); */
+		/* cairo_set_font_size (cr, 20); */
+		/* cairo_move_to (cr, 2, 18); */
+		/* cairo_show_text (cr, g->output_str[0]); */
+		/* cairo_move_to (cr, 2, 38); */
+		/* cairo_show_text (cr, g->output_str[1]); */
 	}
 
 	cairo_destroy (cr);
